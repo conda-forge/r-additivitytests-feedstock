@@ -7,16 +7,15 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: additivityTests_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/additivityTests_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/additivityTests/additivityTests_{{ version }}.tar.gz
   sha256: 5c07556fc8410aada729c586ae115c7436ad0ca84359e86df0b249cc41d20d11
 
 build:
-  noarch: generic
   merge_build_host: True  # [win]
   number: 1003
+  noarch: generic
   rpaths:
     - lib/R/lib/
     - lib/
@@ -36,7 +35,7 @@ test:
 
 about:
   home: https://github.com/simecek/additivityTests
-  license: GPL-3
+  license: GPL-3.0-only
   summary: Implementation of the Tukey, Mandel, Johnson-Graybill, LBI, Tusell and modified Tukey
     non-additivity tests.
   license_family: GPL3
@@ -45,8 +44,3 @@ about:
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
