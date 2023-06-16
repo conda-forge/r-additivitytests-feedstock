@@ -1,11 +1,11 @@
-About r-additivitytests
-=======================
+About r-additivitytests-feedstock
+=================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-additivitytests-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/simecek/additivityTests
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-additivitytests-feedstock/blob/main/LICENSE.txt)
 
 Summary: Implementation of the Tukey, Mandel, Johnson-Graybill, LBI, Tusell and modified Tukey non-additivity tests.
 
