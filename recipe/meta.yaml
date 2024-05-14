@@ -1,4 +1,4 @@
-{% set version = "1.1-4.1" %}
+{% set version = "1.1-4.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/additivityTests_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/additivityTests/additivityTests_{{ version }}.tar.gz
-  sha256: 0421d0aa00edb67c42a61a66722c43cb95d8cd1dafa6bff603739a6fd0767f02
+  sha256: 08f2f7fa5df7ad557d6ca09d3a31e985e9810d7d158e29b8c1cc87e36ad0d51d
 
 build:
   merge_build_host: true  # [win]
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
